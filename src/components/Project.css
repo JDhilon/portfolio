@@ -1,10 +1,40 @@
 .project {
-    background-color: rgb(118, 191, 255);
+    background-color: #536162;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
 }
 
 .previewImage {
     text-align: center;
+}
+
+.links {
+    align-items: center;
+}
+
+.description {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+p {
+    color: #F3F4ED;
+}
+
+h1 {
+    color: #C06014;
+}
+
+a {
+    color: #C06014;
+}
+
+a:hover {
+    color: #da6d15;
 }

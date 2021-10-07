@@ -3,11 +3,16 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Project from "./Project";
 
+import "./App.css";
+
 function App() {
-    return <div>
+
+    // TODO: Add in a function to generate projects, based on JSON file passed in
+
+    return <div class="background">
         <Header />
-        <Project/>
-        <Project/>
+        <Project isLeft={true}/>
+        <Project ifLeft={false}/>
         <Footer />
     </div>;
 }
