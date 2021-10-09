@@ -26,7 +26,6 @@ function Project(props) {
                 YouTube: string
                 }
         }
-
     */
 
     // Using MaterialUI options to create custom styles for hover effects on icons
@@ -44,54 +43,54 @@ function Project(props) {
     // Determine which orientation the content should take
     // TODO: Add listener to also make sure screen is NOT xs
     if(props.isLeft) {
-        return <Container className="project">
+        return <Container className="project" id={props.id}>
         <Row>
             <Col md={{span: 3, offset: 0}} className="description">
                 <Row>
                     <Col>
-                        <h1>Project name</h1>
+                        <h1>{props.proj.title}</h1>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>{props.proj.description}</p>
                     </Col>
                 </Row>
                 {/*TODO: Align these links to the bottom of the column*/}
                 <Row>
-                    <Col><a href="www.google.com"><GitHubIcon className={classes.root}></GitHubIcon></a></Col>
-                    <Col><a href="www.google.com"><LanguageIcon className={classes.root}></LanguageIcon></a></Col>
-                    <Col><a href="www.google.com"><YouTubeIcon className={classes.root}></YouTubeIcon></a></Col>
+                    {(props.proj.links.github === "") ? null :<Col><a href={props.proj.links.github}><GitHubIcon className={classes.root}></GitHubIcon></a></Col>}
+                    {(props.proj.links.website === "") ? null : <Col><a href={props.proj.links.website}><LanguageIcon className={classes.root}></LanguageIcon></a></Col>}
+                    {(props.proj.links.youtube === "") ? null :<Col><a href={props.proj.links.youtube}><YouTubeIcon className={classes.root}></YouTubeIcon></a></Col>}
                 </Row>
             </Col>
             <Col className="my-auto previewImage" xs={12} md={{span: 6, offset: 3}}>
-                <Image src="http://via.placeholder.com/288x480" fluid />
+                <Image src={props.proj.image} fluid />
             </Col>
         </Row>
         </Container>;
     }
     else {
-        return <Container className="project">
+        return <Container className="project" id={props.id}>
         <Row>
             <Col className="my-auto previewImage" xs={12} md={6}>
-                <Image src="http://via.placeholder.com/480x288" fluid />
+                <Image src={props.proj.image} fluid />
             </Col>
             <Col md={{span: 3, offset: 3}}  className="description">
                 <Row>
                     <Col>
-                        <h1>Project name</h1>
+                        <h1>{props.proj.title}</h1>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>{props.proj.description}</p>
                     </Col>
                 </Row>
                 {/*TODO: Align these links to the bottom of the column*/}
                 <Row>
-                <Col><a href="www.google.com"><GitHubIcon className={classes.root}></GitHubIcon></a></Col>
-                    <Col><a href="www.google.com"><LanguageIcon className={classes.root}></LanguageIcon></a></Col>
-                    <Col><a href="www.google.com"><YouTubeIcon className={classes.root}></YouTubeIcon></a></Col>
+                    {(props.proj.links.github === "") ? null :<Col><a href={props.proj.links.github}><GitHubIcon className={classes.root}></GitHubIcon></a></Col>}
+                    {(props.proj.links.website === "") ? null : <Col><a href={props.proj.links.website}><LanguageIcon className={classes.root}></LanguageIcon></a></Col>}
+                    {(props.proj.links.youtube === "") ? null :<Col><a href={props.proj.links.youtube}><YouTubeIcon className={classes.root}></YouTubeIcon></a></Col>}
                 </Row>
             </Col>
         </Row>

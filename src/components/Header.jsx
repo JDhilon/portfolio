@@ -7,7 +7,14 @@ import Container from 'react-bootstrap/Container';
 
 import "./Header.css";
 
-function Header() {
+function Header(props) {
+    function createProjectLinks() {
+        return props.projectNames.map((name, idx) => {
+            console.log(name);
+            return <NavDropdown.Item href={"#proj" + idx}>{name}</NavDropdown.Item>;
+        })
+    }
+
     return <Navbar expand="lg" className="header">
         <Container>
                 {/* TODO: Make this an icon/logo*/}
@@ -17,10 +24,8 @@ function Header() {
                 <Nav className="ms-auto">
                     <Nav.Link href="#contact">Contact</Nav.Link>
                     <NavDropdown title="Projects" id="basic-nav-dropdown">
-                    {/* TODO: Add in a function to automatically generate these and link to projects*/}
-                    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                    {/* TODO: Make Navbar fixed to top, and make anchor tags leave padding*/}
+                    {createProjectLinks()}
                     </NavDropdown>
                 </Nav>
                 </Navbar.Collapse>
