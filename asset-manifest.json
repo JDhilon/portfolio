@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.2ef2c57e.chunk.css",
+    "main.js": "/portfolio/static/js/main.a50d133e.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.a50d133e.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.37da8305.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.37da8305.js.map",
+    "static/css/2.c1256375.chunk.css": "/portfolio/static/css/2.c1256375.chunk.css",
+    "static/js/2.b027bc44.chunk.js": "/portfolio/static/js/2.b027bc44.chunk.js",
+    "static/js/2.b027bc44.chunk.js.map": "/portfolio/static/js/2.b027bc44.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/2.c1256375.chunk.css.map": "/portfolio/static/css/2.c1256375.chunk.css.map",
+    "static/css/main.2ef2c57e.chunk.css.map": "/portfolio/static/css/main.2ef2c57e.chunk.css.map",
+    "static/js/2.b027bc44.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b027bc44.chunk.js.LICENSE.txt",
+    "static/media/dungeon.e81f2fd0.png": "/portfolio/static/media/dungeon.e81f2fd0.png",
+    "static/media/teslagames.ed313a23.jpg": "/portfolio/static/media/teslagames.ed313a23.jpg",
+    "static/media/todo.d03f3ee3.png": "/portfolio/static/media/todo.d03f3ee3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.37da8305.js",
+    "static/css/2.c1256375.chunk.css",
+    "static/js/2.b027bc44.chunk.js",
+    "static/css/main.2ef2c57e.chunk.css",
+    "static/js/main.a50d133e.chunk.js"
+  ]
+}
