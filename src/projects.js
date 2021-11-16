@@ -14,7 +14,7 @@ const projects = [
             website: "https://boiling-hamlet-45674.herokuapp.com/",
             youtube: ""
         },
-        image: todo
+        image: "todo"
     },
     {
         title: "Dungeon Generator",
@@ -27,7 +27,7 @@ const projects = [
             website: "https://jdhilon.github.io/dungeon-gen-app/",
             youtube: ""
         },
-        image: dungeon
+        image: 'dungeon'
     },
     {
         title: "Tesla Games",
@@ -40,7 +40,7 @@ const projects = [
             website: "",
             youtube: "https://www.youtube.com/watch?v=ftquclzoR98&feature=youtu.be"
         },
-        image: teslagames
+        image: "teslagames"
     }
 ];
 

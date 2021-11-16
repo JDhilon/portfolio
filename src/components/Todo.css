@@ -1,0 +1,45 @@
+#List g {
+    opacity: 0;
+    animation: slideIn 8s ease forwards infinite;
+    animation-delay: calc(var(--order) * 200ms);
+}
+
+#Check circle {
+    opacity: 0;
+    animation: check 8s ease forwards infinite;
+    animation-delay: calc(var(--order) * 200ms);
+}
+
+@keyframes slideIn {
+    20% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    30%, 80% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes check {
+    20% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    30%, 60% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    70%, 80% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}

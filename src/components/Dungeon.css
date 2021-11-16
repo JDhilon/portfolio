@@ -1,0 +1,82 @@
+#Rooms rect {
+    opacity: 0;
+}
+
+#Paths g {
+    opacity: 0;
+    animation: fadeInSix 8s ease forwards infinite;
+}
+
+#Room1 {
+    animation: fadeInOne 8s ease forwards infinite;
+}
+
+#Room2 {
+    animation: fadeInTwo 8s ease forwards infinite;
+}
+
+#Room3 {
+    animation: fadeInThree 8s ease forwards infinite;
+}
+
+#Room4 {
+    animation: fadeInFour 8s ease forwards infinite;
+}
+
+#Room5 {
+    animation: fadeInFive 8s ease forwards infinite;
+}
+
+@keyframes fadeInOne {
+    0%, 10% {
+        opacity: 0;
+    }
+    15%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInTwo {
+    0%, 15% {
+        opacity: 0;
+    }
+    20%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInThree {
+    0%, 20% {
+        opacity: 0;
+    }
+    25%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFour {
+    0%, 25% {
+        opacity: 0;
+    }
+    30%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFive {
+    0%, 30% {
+        opacity: 0;
+    }
+    35%, 100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInSix {
+    0%, 35% {
+        opacity: 0;
+    }
+    40%, 100% {
+        opacity: 1;
+    }
+}

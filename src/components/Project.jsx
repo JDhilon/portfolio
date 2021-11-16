@@ -11,6 +11,10 @@ import LanguageIcon from '@mui/icons-material/Language';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
+import Todo from './Todo';
+import Dungeon from './Dungeon';
+import Tesla from "./Tesla";
+
 import './Project.css';
 
 function Project(props) {
@@ -40,6 +44,21 @@ function Project(props) {
 
     const classes = useClasses();
 
+    function chooseImage() {
+        if(props.proj.image === 'todo') {
+            return <Todo />;
+        }
+        else if(props.proj.image === 'dungeon'){
+            return <Dungeon />;
+        }
+        else if(props.proj.image === 'teslagames') {
+            return <Tesla />;
+        }
+        else {
+            return <Image src={props.proj.image} fluid />;
+        }
+    }
+
     // Determine which orientation the content should take
     // TODO: Add listener to also make sure screen is NOT xs
     if(props.isLeft) {
@@ -64,7 +83,7 @@ function Project(props) {
                 </Row>
             </Col>
             <Col className="my-auto previewImage" xs={12} md={{span: 6, offset: 3}}>
-                <Image src={props.proj.image} fluid />
+                {chooseImage()}
             </Col>
         </Row>
         </Container>;
@@ -73,7 +92,7 @@ function Project(props) {
         return <Container className="project" id={props.id}>
         <Row>
             <Col className="my-auto previewImage" xs={12} md={6}>
-                <Image src={props.proj.image} fluid />
+                {chooseImage()}
             </Col>
             <Col md={{span: 3, offset: 3}}  className="description">
                 <Row>

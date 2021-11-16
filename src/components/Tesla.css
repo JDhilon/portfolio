@@ -1,0 +1,79 @@
+#RoadLines rect {
+    transform: translateX(0);
+    animation: moveRoad 1s linear infinite;
+}
+
+#Cars g {
+    transform: translateX(0%);
+    animation: moveCars 8s ease-in-out infinite;
+    animation-delay: var(--offset);
+}
+
+#Bullet1 {
+    animation: shootBulletForward 3s linear infinite forwards;
+    animation-delay: var(--offset);
+}
+
+#Bullet2 {
+    animation: shootBulletBackward 4s linear infinite forwards;
+    animation-delay: var(--offset);
+}
+
+@keyframes moveRoad {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-20%);
+    }
+}
+
+@keyframes moveCars {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(20%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(20%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes shootBulletForward {
+    0% { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(100%);
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes shootBulletBackward {
+    0% { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+    30% {
+        transform: translateX(-100%);
+    }
+    40% {
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0);
+    }
+}

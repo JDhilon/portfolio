@@ -22,7 +22,7 @@ function Header(props) {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Nav.Link href="#contact">Contact</Nav.Link>
+                    <Nav.Link href="mailto:jdhilondev@gmail.com">Contact</Nav.Link>
                     <NavDropdown title="Projects" id="basic-nav-dropdown">
                     {/* TODO: Make Navbar fixed to top, and make anchor tags leave padding*/}
                     {createProjectLinks()}
